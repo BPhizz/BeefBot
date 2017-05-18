@@ -31,8 +31,8 @@ async def KKCrispus(*args):
 	
 @beef_bot.command()
 async def darcy(*args):
-	return await beef_bot.say("Whos that? ")
+	return await beef_bot.say("Whos that? :Kappa: ")
 
 
-
+beef_bot.get_all_emojis()
 beef_bot.run(secret.BOT_TOKEN)
