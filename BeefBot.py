@@ -23,7 +23,11 @@ async def fuDarcy(*args):
 
 @beef_bot.command()
 async def Craysin(*args):
-	return await beef_bot.say("He's the amazing craysin!")	
+	return await beef_bot.say("He's the amazing craysin!")
+	
+@beef_bot.command()
+async def KKCrispus(*args):
+	return await beef_bot.say("Where's Brandon?")	
 	
 @beef_bot.command()
 async def darcy(*args):
