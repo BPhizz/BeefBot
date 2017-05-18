@@ -22,6 +22,10 @@ async def beef(*args):
 async def fuDarcy(*args):
 	return await beef_bot.say("Go back to bed bitch")	
 	
+@beef_bot.command()
+async def darcy(*args):
+	return await beef_bot.say("Whos that? :Kappa: ")
+
 
 
 beef_bot.run(secret.BOT_TOKEN)
