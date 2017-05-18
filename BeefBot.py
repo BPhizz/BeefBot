@@ -10,11 +10,11 @@ async def on_read():
 	print("Client logged in")
 
 @beef_bot.command()
-async def hello(args):
+async def hello(*args):
 	return await beef_bot.say("Hello World!")
 
 @beef_bot.command()
-async def beef(args):
+async def beef(*args):
 	return await beef_bot.say("I am winner!")
 
 
