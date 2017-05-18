@@ -1,7 +1,7 @@
 import discord
 from discord.ext.commands import Bot
 
-import Secret
+import secret
 
 beef_bot = Bot(command_prefix="!")
 
@@ -18,12 +18,4 @@ async def beef(args):
 	return await beef_bot.say("I am winner!")
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-beefbot.run(Secret.BOT_TOKEN)
-=======
-beef_bot.run(secret.BOT_TOKEN)
->>>>>>> e2b2631790e011da3cba54b87107ca5bfcf79f5b
-=======
-beef_bot.run(secret.BOT_TOKEN)
->>>>>>> e2b2631790e011da3cba54b87107ca5bfcf79f5b
+beefbot.run(secret.BOT_TOKEN)
