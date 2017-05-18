@@ -2,7 +2,6 @@ import discord
 from discord.ext.commands import Bot
 
 import secret
-import beefy
 
 beef_bot = Bot(command_prefix="!")
 
