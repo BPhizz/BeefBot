@@ -23,7 +23,7 @@ async def fuDarcy(*args):
 	
 @beef_bot.command()
 async def darcy(*args):
-	return await beef_bot.say("Whos that? :Kappa: ")
+	return await beef_bot.say("Whos that? ")
 
 
 
