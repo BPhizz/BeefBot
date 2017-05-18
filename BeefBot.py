@@ -18,4 +18,4 @@ async def beef(args):
     return await BeefBot.say("I am winner!")
 
 
-BeefBot.run(secrets.BOT_TOKEN)
+BeefBot.run(Secret.BOT_TOKEN)
