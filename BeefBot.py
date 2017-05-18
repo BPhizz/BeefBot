@@ -17,5 +17,7 @@ async def hello(*args):
 async def beef(*args):
 	return await beef_bot.say("I am winner!")
 
+async def fuDarcy(*args):
+	return await beef_bot.say("Go back to bed bitch")	
 
 beef_bot.run(secret.BOT_TOKEN)
