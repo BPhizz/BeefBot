@@ -16,11 +16,7 @@ async def hello(*args):
 
 @beef_bot.command()
 async def beef(*args):
-	return await beef_bot.say("I am winner!")
-	
-@beef_bot.command()
-async def fuDarcy(*args):
-	return await beef_bot.say("Go back to bed bitch")
+	return await beef_bot.say("I am winner!")	
 
 @beef_bot.command()
 async def Craysin(*args):
