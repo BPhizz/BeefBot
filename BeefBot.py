@@ -3,19 +3,19 @@ from discord.ext.commands import Bot
 
 import secret
 
-beefbot = Bot(command_prefix="!")
+beef_bot = Bot(command_prefix="!")
 
-@beefbot.event
+@beef_bot.event
 async def on_read():
 	print("Client logged in")
 
-@beefbot.command()
+@beef_bot.command()
 async def hello(args):
-	return await beefbot.say("Hello World!")
+	return await beef_bot.say("Hello World!")
 
-@beefbot.command()
+@beef_bot.command()
 async def beef(args):
-	return await beefbot.say("I am winner!")
+	return await beef_bot.say("I am winner!")
 
 
-beefbot.run(secret.BOT_TOKEN)
+beef_bot.run(secret.BOT_TOKEN)
