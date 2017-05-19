@@ -46,9 +46,27 @@ async def darcy(*args):
 	
 @beef_bot.command()
 async def add(left : int, right : int):
-    """Adds two numbers together."""
-    await beef_bot.say("%d + %d = %d" % (left,right,left + right))
+	"""Adds two numbers together."""
+	await beef_bot.say("%d + %d = %d" % (left,right,left + right))
 
+@beef_bot.event
+async def on_message(message):
+	if message.content.startswith('!Am I a Winner?'):
+		await beef_bot.send_message(message.channel,'Are you a winner?')
+		for i in range(4):
+			msg = await beef_bot.wait_for_message(author=message.author,content='yes')
+			temp = randint(1,4)
+			if temp==1:
+				fmt = "No?"
+			elif temp==2:
+				fmt = "Yes?"
+			elif temp==3:
+				fmt = "Try again?"
+			elif temp==4:
+				fmt = "Nah you is scrub"
+			await beef_bot.send_message(message.channel, fmt)
+		await beef_bot.send_message(message.channel, '...')
+		await beef_bot.send_message(message.channel, 'Ok... you are Winner')
 	
 @beef_bot.command()
 async def Kyle(*args):
