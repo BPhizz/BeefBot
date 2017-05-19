@@ -2,8 +2,12 @@ import discord
 from random import randint
 from discord.ext.commands import Bot
 import logging
+import datetime, re
+import sys
 
-logging.basicConfig(level=logging.INFO)
+
+logging.basicConfig(level=logging.CRITICAL)
+
 
 import secret
 
@@ -11,11 +15,12 @@ beef_bot = Bot(command_prefix="!")
 
 @beef_bot.event
 async def on_read():
-	print('Logged in as')
-	print('Username: ' + beef_bot.user.name)
-	print('ID: ' + beef_bot.user.id)
-	print('------')
-	print(beef_bot)
+    print('Logged in as:')
+    print('Username: ' + beef_bot.user.name)
+    print('ID: ' + beef_bot.user.id)
+    print('------')
+    if not hasattr(beef_bot, 'uptime'):
+        beef_bot.uptime = datetime.datetime.utcnow()
 
 
 		
