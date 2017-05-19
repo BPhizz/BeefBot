@@ -1,9 +1,11 @@
 import discord
 from random import randint
 from discord.ext.commands import Bot
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 import secret
-print('Logged in as')
 
 beef_bot = Bot(command_prefix="!")
 
@@ -15,6 +17,8 @@ async def on_read():
 	print('------')
 	print(beef_bot)
 
+
+		
 @beef_bot.command()
 async def hello(*args):
 	return await beef_bot.say("Hello World!")
@@ -35,7 +39,12 @@ async def KKCrispus(*args):
 async def darcy(*args):
 	return await beef_bot.say("Whos that? <:Kappa:240828655385837568> ")
 	
+@beef_bot.command()
+async def add(left : int, right : int):
+    """Adds two numbers together."""
+    await beef_bot.say("%d + %d = %d" % (left,right,left + right))
 
+	
 @beef_bot.command()
 async def Kyle(*args):
 	temp = randint(1,4)
