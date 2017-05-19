@@ -65,7 +65,6 @@ async def on_message(message):
 			elif temp==4:
 				fmt = "Nah you is scrub"
 			await beef_bot.send_message(message.channel, fmt)
-		await beef_bot.send_message(message.channel, '...')
 		await beef_bot.send_message(message.channel, 'Ok... you are Winner')
 	
 @beef_bot.command()
