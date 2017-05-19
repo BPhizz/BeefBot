@@ -34,13 +34,13 @@ async def darcy(*args):
 @beef_bot.command()
 async def Kyle(*args):
 	temp = randint(1,4)
-	if temp==1
+	if temp==1:
 		return await beef_bot.say("Take your shirt off!")
-	elif temp==2
+	elif temp==2:
 		return await beef_bot.say("Doube What?! Triple What?! Don't make me go killtacular on your ass!")
-	elif temp==3
+	elif temp==3:
 		return await beef_bot.say("Hey Chris, whats up?")
-	elif temp==4
+	elif temp==4:
 		return await beef_bot.say("[placeholder]")
 
 
