@@ -2,13 +2,17 @@ import discord
 from discord.ext.commands import Bot
 
 import secret
+print('Logged in as')
 
 beef_bot = Bot(command_prefix="!")
-beef_bot.get_all_emojis()
 
 @beef_bot.event
 async def on_read():
-	print("Client logged in")
+	print('Logged in as')
+	print('Username: ' + beef_bot.user.name)
+	print('ID: ' + beef_bot.user.id)
+	print('------')
+	print(beef_bot)
 
 @beef_bot.command()
 async def hello(*args):
@@ -33,6 +37,7 @@ async def KKCrispus(*args):
 @beef_bot.command()
 async def darcy(*args):
 	return await beef_bot.say("Whos that? <:Kappa:240828655385837568> ")
+	
 
 
 
