@@ -95,9 +95,9 @@ async def game(*args):
 	elif temp==6:
 		return await beef_bot.say("League of Legends")
 
-@beef_bot.command()
+"""@beef_bot.command()   WHY DIS NO WORK
 async def code(*args):
-	name = self.name
+	name = display_name(self)
 	return await beef_bot.say(name)
-
+"""
 beef_bot.run(secret.BOT_TOKEN)
