@@ -51,7 +51,7 @@ async def add(left : int, right : int):
 
 # @beef_bot.event
 # async def on_message(message):
-	# if message.content.startswith('!Am I a Winner?'):
+	# if message.content.startswith('Am I a Winner?'):
 		# await beef_bot.send_message(message.channel,'Are you a winner?')
 		# for i in range(4):
 			# msg = await beef_bot.wait_for_message(author=message.author,content='yes')
