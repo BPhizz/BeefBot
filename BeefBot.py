@@ -79,6 +79,21 @@ async def Kyle(*args):
 	elif temp==4:
 		return await beef_bot.say("[placeholder]")
 
+@beef_bot.command()
+async def game(*args):
+	temp = randint(1,5)
+	if temp==1:
+		return await beef_bot.say("Heroes of the Storm")
+	elif temp==2:
+		return await beef_bot.say("Diablo III")
+	elif temp==3:
+		return await beef_bot.say("PUBG")
+	elif temp==4:
+		return await beef_bot.say("Overwatch")
+	elif temp==5:
+		return await beef_bot.say("Sleep")
+	elif temp==6:
+		return await beef_bot.say("League of Legends")
 
 
 beef_bot.run(secret.BOT_TOKEN)
