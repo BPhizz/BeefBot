@@ -6,7 +6,7 @@ import datetime, re
 import sys
 
 
-logging.basicConfig(level=logging.CRITICAL)
+logging.basicConfig(level=logging.info)
 
 
 import secret
